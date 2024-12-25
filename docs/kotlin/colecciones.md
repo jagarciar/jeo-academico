@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
+id: colecciones
+title: Colecciones
 description: ¿Qué es una List? ¿Qué es un Set? ¿Qué es un Map?
 tags:
   - Kotlin
@@ -14,6 +16,33 @@ tags:
 ---
 
 # Colecciones
+
+## Arreglos
+
+Un **arreglo** es una **estructura de datos** que contiene un **número fijo** de elementos del mismo tipo. 
+
+```kotlin
+var nombres = arrayOf("jeyson","andres","garcia")
+nombres += "rodriguez"
+nombres.joinToString()
+println(nombres)
+```
+
+A través de la función **arrayOf()** podemos crear un arreglo y haciendo uso de la función **joinToString()** adicionamos un nuevo elemento al final del mismo. Si queremos crear un arreglo completamente vacío deberemos invocar la función **emptyArray()**
+
+### Operaciones
+
+#### contentEquals()
+
+La función **contentEquals()** nos va permitir comparar dos arreglos, como por ejemplo:
+
+```kotlin
+var nombres = arrayOf("jeyson","andres","garcia")
+var nombres2 = arrayOf("jeyson","andres","garcia")
+println(nombres.contentEquals(nombres2))
+```
+
+Si la variable nombres es igual a la variables nombres2 retornará **true**, de lo contrario, retornara **false**
 
 ## List
 

@@ -1,5 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
+id: funciones
+title: Funciones
 description: ¿Cómo debo ejecutar Println? ¿Cómo debo ejecutar Readln()?
 tags:
   - Kotlin

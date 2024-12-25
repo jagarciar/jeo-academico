@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Lenguaje de programación ampliamente utilizados por los desarrolladores de Android de todo el mundo"
+    "description": "Kotlin es un lenguaje de programación de código abierto y tipado estático que corre sobre la máquina virtual de java (JVM) y también puede ser compilado a JavaScript o código nativo mediante LLVM. Fue desarrollado por JetBrains y se ha convertido en uno de los lenguajes de programación más populares para el desarrollo de aplicativos Android."
   }
 }

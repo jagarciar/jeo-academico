@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+id: variables
+title: Variables
 description: ¿Qué son las variables? ¿Qué son los tipos de datos? 
 tags:
   - Kotlin
@@ -17,9 +19,7 @@ tags:
   - Boolean
 ---
 
-# Primeros pasos
-  
-## Variables {#variables}
+# Variables
 
 Las **variables** en **Kotlin** nos permiten **almacenar** **datos** y son de tipo **read-only** (**val**) o de tipo **mutable** (**var**). Es decir, cuando se declara una variable de tipo **val**, el valor de esta variable no podrá cambiar en el tiempo. Por el contrario, si
 se declara una variable de tipo **var**, el valor de esta variable podrá cambiar en el tiempo.  
@@ -61,29 +61,3 @@ val palabra : String = "Hola"
 - Las variables de tipo **Int** al igual que las variables de tipo **Float** guardan **32 Bits**. Sin embargo, las variables de tipo **Double** guardan **64 Bits**. 
 - Las variables de tipo **Boolean** solo pueden guardar dos posibles valores : **true** o **false**. 
 
-## Arreglos
-
-Un **arreglo** es una **estructura de datos** que contiene un **número fijo** de elementos del mismo tipo. 
-
-```kotlin
-var nombres = arrayOf("jeyson","andres","garcia")
-nombres += "rodriguez"
-nombres.joinToString()
-println(nombres)
-```
-
-A través de la función **arrayOf()** podemos crear un arreglo y haciendo uso de la función **joinToString()** adicionamos un nuevo elemento al final del mismo. Si queremos crear un arreglo completamente vacío deberemos invocar la función **emptyArray()**
-
-### Operaciones
-
-#### contentEquals()
-
-La función **contentEquals()** nos va permitir comparar dos arreglos, como por ejemplo:
-
-```kotlin
-var nombres = arrayOf("jeyson","andres","garcia")
-var nombres2 = arrayOf("jeyson","andres","garcia")
-println(nombres.contentEquals(nombres2))
-```
-
-Si la variable nombres es igual a la variables nombres2 retornará **true**, de lo contrario, retornara **false**
