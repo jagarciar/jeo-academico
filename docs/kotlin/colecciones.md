@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: colecciones
 title: Colecciones
 description: ¿Qué es una List? ¿Qué es un Set? ¿Qué es un Map?
@@ -17,7 +17,9 @@ tags:
 
 # Colecciones
 
-## Arreglos
+Las colecciones son **estructuras de datos** que almacenan más de un **valor** de un mismo **tipo de dato**. 
+
+## Array
 
 Un **arreglo** es una **estructura de datos** que contiene un **número fijo** de elementos del mismo tipo. 
 

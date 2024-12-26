@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 id: condicionales
 title: Condicionales
 description: ¿Qué es el if/else? ¿Qué es el when?
@@ -17,9 +17,11 @@ tags:
 
 # Condicionales
 
-## if else
+Los **condicionales** son las declaraciones que permiten que el software tome decisiones dinámicamente en función de la evaluación de **expresiones lógicas**. En otras palabras, definen **bifurcaciones** en el código, donde se ejecuta un conjunto de instrucciones si se cumple una condición, y otro conjunto si no se cumple.
 
-Kotlin es capaz de tomar decisiones en función de si un **fragmento de código** se evalúa como **verdadero o** como **falso**. Estos fragmentos de código se denominan **expresiones condicionales**. 
+## If..else
+
+En el siguiente ejemplo se hace uso de la instructiva **if** para validar si el valor de la variable **numero1** es igual a 1 (haciendo uso del operador **==**). Si esta condición llega a ser verdadera, se incrementa el valor de la variable **numero1** en 3 (haciendo uso del operador **+=**). Si esta condición no es verdadera, el valor de la variable **numero1** se decrementa en 3 (haciendo uso del operador **-=**) bajo la instructiva **else**. 
 
 ```kotlin
 var numero1 : Int = 3
@@ -30,9 +32,6 @@ if(numero1 == 1){
   numero1 -= 3
 }
 ```
-
-En el anterior ejemplo se hace uso de la instructiva **if**. En esta instructiva se
-esta validando si el valor de la variable **numero1** es igual a 1 (haciendo uso del operador **==**). Si esta condición llega a ser verdadera, se incrementa el valor de la variable **numero1** en 3 (haciendo uso del operador **+=**). Si esta condición no es verdadera, el valor de la variable **numero1** se decrementa en 3 (haciendo uso del operador **-=**) bajo la instructiva **else**. 
 
 :::tip
 
@@ -117,7 +116,7 @@ numero1 = numero1 - 3
 ```
 :::
 
-## when
+## When 
 
 En otros lenguajes de programación se conoce la instructiva **switch**. Esta instructiva es la misma **when** en **Kotlin**. Su objetivo es condicionar el valor de una variable con posibles resultados. 
 
@@ -144,3 +143,24 @@ var numero2 : Int = when {
 ```
 
 En el anterior ejemplo tenemos dos variables : **numero1** y **numero2**. El valor de la variable **numero2** dependerá del resultado de la instructiva **when**. La instructiva **when** depende del valor de la variable **numero1**. Si el valor es 1, el valor de la variable **numero2** será la multiplicación entre el valor de la variable **numero1** y 10. Si el valor es 2, el valor de la variable **numero2** será la división entre el valor de la variable **numero1** y 10. Si el valor es 3, el valor de la variable **numero2** será el residuo entre el valor de la variable **numero1** y 2. Si no es ninguno de esos valores, el valor de la variable **numero2** será 0. 
+
+```kotlin
+var numero1 : Int = 3
+var numero2 : Int = when(numero1) {
+  1,2 -> numero1 % 2
+  else -> 0
+}
+```
+
+En el anterior ejemplo tenemos una variable **numero1** y una segunda variable **numero2**. A comparación de los ejemplos anteriores, en la primera opción se define que si el valor de la variable **numero1** es 1 o 2 entonces el resultado será el residuo de **numero1** por 2. 
+
+```kotlin
+var numero1 : Int = 3
+var numero2 : Int = when(numero1) {
+  in 1..5 -> numero1 % 2
+  !in 5..10 -> numero1 / 2
+  else -> 0
+}
+```
+
+En el anterior ejemplo tenemos una variable **numero1** y una segunda variable **numero2**. A comparación de los ejemplos anteriores, en la primera opción se define que si el valor de la variable **numero1** se encuentra entre un número del rango 1 al 5 entonces el resultado será el residuo de **numero1** por 2. En la segunda opción se define que si el valor de la variable **numero1** no se encuentra entre un número del rango del 5 al 10 entonces el resultado será la división de **numero1** por 2. 

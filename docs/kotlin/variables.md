@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: variables
 title: Variables
 description: ¿Qué son las variables? ¿Qué son los tipos de datos? 
@@ -40,7 +40,7 @@ val palabra2 = "hola2"
 val numero2 = 2
 
 numero = 3
-palabra = "¿Cómo estás?
+palabra = "¿Cómo estás?"
 ```
 
 Por tal motivo, la **variable** **numero** y la **variable** **palabra** pueden ser modificadas. Sin embargo, las **variables** **palabra2** y **numero2** no pueden ser modificadas. 
@@ -61,3 +61,18 @@ val palabra : String = "Hola"
 - Las variables de tipo **Int** al igual que las variables de tipo **Float** guardan **32 Bits**. Sin embargo, las variables de tipo **Double** guardan **64 Bits**. 
 - Las variables de tipo **Boolean** solo pueden guardar dos posibles valores : **true** o **false**. 
 
+:::tip
+
+La función **println** permite imprimir por consola el valor de una o más variables. 
+
+```kotlin
+var palabra = "hola"
+var numero = 1
+println(numero)
+println("Soy $numero")
+println("Soy ${numero + 1}")
+```
+
+En el anterior ejemplo se imprime por consola tres valores: el primer valor corresponde al valor de la variable numero, es decir, 1. En el segundo valor imprime la **concatenación** de Soy y el valor de la variable numero, es decir, **Soy 1**. Finalmente en el tercer valor imprime la **concatenación** de Soy y el valor de la suma de la variable numero con 1, es decir, **Soy 2**. 
+
+:::
