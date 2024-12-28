@@ -1,0 +1,8 @@
+{
+  "label": "Tutoriales",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "En esta sección encontrarás tutoriales de programación en Kotlin."
+  }
+}

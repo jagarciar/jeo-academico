@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-id: conceptos-basicos
-title: Conceptos básicos
+id: multiplatform
+title: Multiplataforma
 description: ¿Qué es una List? ¿Qué es un Set? ¿Qué es un Map?
 tags:
   - Kotlin
