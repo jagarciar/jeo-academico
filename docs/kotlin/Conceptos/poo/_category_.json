@@ -1,6 +1,6 @@
 {
   "label": "P.O.O",
-  "position": 1,
+  "position": 7,
   "link": {
     "type": "generated-index",
     "description": "En esta sección encontrarás conceptos de la programación orientada a objetos como clases, propiedades y métodos desde un perspectiva en Kotlin"

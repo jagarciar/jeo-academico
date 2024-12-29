@@ -17,6 +17,7 @@ tags:
   - Char
   - String
   - Boolean
+  - Any
 ---
 
 # Variables
@@ -76,3 +77,15 @@ println("Soy ${numero + 1}")
 En el anterior ejemplo se imprime por consola tres valores: el primer valor corresponde al valor de la variable numero, es decir, 1. En el segundo valor imprime la **concatenación** de Soy y el valor de la variable numero, es decir, **Soy 1**. Finalmente en el tercer valor imprime la **concatenación** de Soy y el valor de la suma de la variable numero con 1, es decir, **Soy 2**. 
 
 :::
+
+### Any
+
+En **Kotlin** existe la palabra reservada **Any** que permite asignar cualquier valor de cualquier tipo de dato a una variable (excepto valores **nulos* si no se incluye el operador **?**)
+
+```kotlin
+var variable : Any = "Jeyson";
+variable = 10;
+println(variable);
+```
+
+En el anterior ejemplo creamos la variable **variable** que inicialmente tiene asignado el valor **Jeyson**. La variable **variable** tiene una re-asignación de valor con el número **10**. Finalmente el programa imprime **10**. 
